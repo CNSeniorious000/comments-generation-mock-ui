@@ -3,5 +3,6 @@
     <a href="/design/gen-comments">gen-comments</a>
     <a href="/design/features/1">feature-1</a>
     <a href="/design/features/2">feature-2</a>
+    <a href="/design/features/3">feature-3</a>
   </div>
 </div>
