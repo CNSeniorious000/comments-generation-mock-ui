@@ -5,5 +5,7 @@
     <a href="/design/features/2">feature-2</a>
     <a href="/design/features/3">feature-3</a>
     <a href="/design/features/4">feature-4</a>
+    <a href="/design/sft">SFT</a>
+    <a href="/design/dpo">DPO</a>
   </div>
 </div>
