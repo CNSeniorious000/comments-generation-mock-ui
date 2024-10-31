@@ -7,5 +7,6 @@
     <a href="/design/features/4">feature-4</a>
     <a href="/design/sft">SFT</a>
     <a href="/design/dpo">DPO</a>
+    <a href="/design/right">right panel</a>
   </div>
 </div>
