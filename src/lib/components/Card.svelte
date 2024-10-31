@@ -6,7 +6,7 @@
   export let buttons = false;
 </script>
 
-<div class="relative flex flex-col gap-1 b-(1 zinc-2) px-3 py-2">
+<div class="relative flex flex-col gap-1 b-(l-1 t-1 zinc-2) px-3 py-2">
   <div class="absolute left-0 top-0 rounded-full bg-white p-1 -translate-1/2">
     <div class="{icon} text-lg" />
   </div>
