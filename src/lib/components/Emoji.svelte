@@ -1,5 +1,5 @@
 <script>
-  import { onMount, tick } from "svelte";
+  import { afterUpdate, onMount } from "svelte";
   import { blur, scale } from "svelte/transition";
 
   export let emoji = "";
@@ -10,10 +10,12 @@
   let first = true;
   let show = false;
 
-  onMount(async () => {
+  onMount(() => {
     show = true;
-    await tick();
-    first = false;
+  });
+
+  afterUpdate(() => {
+    (first && emoji && show) && (first = false);
   });
 </script>
 
