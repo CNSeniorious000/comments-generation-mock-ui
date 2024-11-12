@@ -17,7 +17,7 @@
   });
 </script>
 
-<div class="relative aspect-1 *:absolute">
+<div class="relative aspect-1 [&>*]:(absolute left-1/2 top-1/2 -translate-1/2)">
   {#if emoji && show}
     {#key emoji}
       <div in:blur|global={{ delay: first ? 0 : delay, opacity: 1, amount }} out:blur={{ opacity: 1, amount }}>
