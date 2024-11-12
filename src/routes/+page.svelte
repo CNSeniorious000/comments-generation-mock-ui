@@ -9,5 +9,6 @@
     <a href="/design/dpo">DPO</a>
     <a href="/design/right">right panel</a>
     <a href="/demo">utility ui elements</a>
+    <a href="/slides">slides</a>
   </div>
 </div>

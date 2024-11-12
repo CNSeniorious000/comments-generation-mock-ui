@@ -7,6 +7,11 @@ const config = defineConfig({
   transformers: [transformerVariantGroup(), transformerDirectives()],
   presets: [presetUno(), presetIcons(), presetTypography()],
   safelist: icons,
+  shortcuts: {
+    col: "flex flex-col",
+    row: "flex flex-row",
+    center: "grid place-items-center",
+  },
 });
 
 export default config;
