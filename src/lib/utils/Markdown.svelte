@@ -1,11 +1,12 @@
 <script lang="ts">
-  import "../md.css";
+  import "./md.css";
 
   import SvelteMarkdown from "svelte-markdown";
+  import { fly } from "svelte/transition";
 
   export let text: string;
 </script>
 
-<article class="max-h-full max-w-full p-3 text-neutral-3 prose">
+<article in:fly={{ y: 5 }} class="max-h-full max-w-full prose">
   <SvelteMarkdown source={text} />
 </article>
