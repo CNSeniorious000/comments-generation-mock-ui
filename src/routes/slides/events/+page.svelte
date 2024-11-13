@@ -2,7 +2,7 @@
   import Left from "./Left.svelte";
   import Right from "./Right.svelte";
   import Start from "./Start.svelte";
-  import { fade, scale, slide } from "svelte/transition";
+  import { fade, fly, scale, slide } from "svelte/transition";
 
   let inputState: "empty" | "over" | "dropped";
   let buttonState: "before" | "ready" | "loading" | "done" = "before";
@@ -10,18 +10,22 @@
   $: inputState === "dropped" && (buttonState = "ready");
 
   $: showBoth = inputState === "dropped" && (buttonState === "loading" || buttonState === "done");
+
+  let zoom = false;
+
+  $: showBoth ? setTimeout(() => zoom = true, 2000) : (zoom = false);
 </script>
 
 {#if inputState === "dropped"}
-  <div in:fade class="[&>*]:(fixed rounded-full)" aria-hidden="true">
-    <div class="left-10vw size-40vmax bg-#ff9933/10 blur-90" />
+  <div in:fade class="transition-opacity duration-900 [&>*]:(fixed rounded-full)" aria-hidden="true" class:op-50={zoom}>
+    <div class="left-10vw size-40vmax bg-#ff9933/10 blur-90 transition-transform duration-900" class:translate-x-30vw={zoom} />
     <div class="bottom-10vh right-10vw size-40vmax bg-#E6162D/5 blur-60" />
   </div>
 {/if}
 
-<div in:scale={{ start: 0.99 }} class="absolute inset-0 center">
+<div in:scale={{ start: 0.99 }} class="absolute inset-0 center transition-transform duration-900" class:-translate-x-23%={zoom}>
 
-  <div class="h-3xl w-6xl col overflow-hidden b-1 rounded-md bg-white/70 shadow-(black/4 xl) backdrop-blur-2xl">
+  <div class="h-3xl w-6xl col overflow-hidden b-1 rounded-md bg-white/70 shadow-(black/4 xl) backdrop-blur-2xl transition-transform duration-800" class:delay-100={zoom} class:scale-140={zoom}>
     <div class="row cursor-grab select-none items-center gap-4 b-b-1 px-3.5 py-3">
       <div class="row gap-1.9 [&>div]:(size-2.4 rounded-full)">
         <div class="animate-(fade-in duration-300 both) bg-red" />
@@ -45,16 +49,21 @@
     </div>
     <div class="h-full row justify-between overflow-hidden bg-white">
       <div class="relative w-3/5 transition-transform duration-800" class:translate-x-33%={!showBoth}>
-        <Left bind:state={inputState} />
+        <Left bind:state={inputState} {zoom} />
         <div class="absolute bottom-0 right-0 row gap-2 p-4">
           <Start bind:state={buttonState} />
         </div>
       </div>
       {#if showBoth}
-        <div in:slide={{ axis: "x", duration: 900 }} class="center w-2/5 b-l-1 bg-hero-topography-neutral-1">
+        <div in:slide={{ axis: "x", duration: 900 }} class="center w-2/5 b-l-1">
+          <div in:slide={{ axis: "x", duration: 900 }} class="absolute bottom-0 right-0 top-10 w-2/5 overflow-hidden">
+            <div in:fly={{ x: -"20%", opacity: 1, duration: 900 }} class="absolute inset-0 transition-transform duration-900 bg-hero-topography-neutral-1 -m-20%" class:scale-80={zoom} />
+          </div>
           <Right />
         </div>
       {/if}
     </div>
   </div>
 </div>
+
+<svelte:window on:click={() => buttonState === "done" && (zoom = !zoom)} />
