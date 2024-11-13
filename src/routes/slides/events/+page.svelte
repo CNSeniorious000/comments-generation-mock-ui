@@ -36,7 +36,7 @@
       <div class="w-3/5">
         <Left />
       </div>
-      <div class="center w-2/5 b-l-1">
+      <div class="bg-hero-topography-neutral-1 center w-2/5 b-l-1">
         <Right />
       </div>
     </div>
