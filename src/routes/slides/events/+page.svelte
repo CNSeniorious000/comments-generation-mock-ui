@@ -4,15 +4,15 @@
   import Start from "./Start.svelte";
   import { fade, scale, slide } from "svelte/transition";
 
-  let state: "empty" | "over" | "dropped";
+  let inputState: "empty" | "over" | "dropped";
   let buttonState: "before" | "ready" | "loading" | "done" = "before";
 
-  $: state === "dropped" && (buttonState = "ready");
+  $: inputState === "dropped" && (buttonState = "ready");
 
-  $: showBoth = state === "dropped" && (buttonState === "loading" || buttonState === "done");
+  $: showBoth = inputState === "dropped" && (buttonState === "loading" || buttonState === "done");
 </script>
 
-{#if state === "dropped"}
+{#if inputState === "dropped"}
   <div in:fade class="[&>*]:(fixed rounded-full)" aria-hidden="true">
     <div class="left-10vw size-40vmax bg-#ff9933/10 blur-90" />
     <div class="bottom-10vh right-10vw size-40vmax bg-#E6162D/5 blur-60" />
@@ -45,7 +45,7 @@
     </div>
     <div class="h-full row justify-between overflow-hidden bg-white">
       <div class="relative w-3/5 transition-transform duration-800" class:translate-x-33%={!showBoth}>
-        <Left bind:state />
+        <Left bind:state={inputState} />
         <div class="absolute bottom-0 right-0 row gap-2 p-4">
           <Start bind:state={buttonState} />
         </div>
