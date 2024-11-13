@@ -7,6 +7,6 @@
   export let text: string;
 </script>
 
-<article in:fly={{ y: 5 }} class="max-h-full max-w-full prose">
+<article in:fly={{ y: 5 }} class="max-w-full prose">
   <SvelteMarkdown source={text} />
 </article>
