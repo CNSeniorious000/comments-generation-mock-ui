@@ -23,17 +23,17 @@
   </div>
 {/if}
 
-<div in:scale={{ start: 0.99 }} class="absolute inset-0 center transition-transform duration-900" class:-translate-x-23%={zoom}>
+<div in:scale={{ start: 0.97, duration: 600 }} class="absolute inset-0 center transition-transform duration-900" class:-translate-x-23%={zoom}>
 
-  <div class="h-3xl w-6xl col overflow-hidden b-1 rounded-md bg-white/70 shadow-(black/4 xl) backdrop-blur-2xl transition-transform duration-800" class:delay-100={zoom} class:scale-140={zoom}>
-    <div class="row cursor-grab select-none items-center gap-4 b-b-1 px-3.5 py-3">
+  <div class="relative h-3xl w-6xl col overflow-hidden b-1 rounded-md shadow-(black/4 xl) transition-transform duration-800" class:delay-100={zoom} class:scale-140={zoom}>
+    <div class="row cursor-grab select-none items-center gap-4 b-b-1 bg-white bg-op-70 px-3.5 py-3 backdrop-blur-2xl transition-background-color duration-900" class:!bg-op-30={zoom}>
       <div class="row gap-1.9 [&>div]:(size-2.4 rounded-full)">
         <div class="animate-(fade-in duration-300 both) bg-red" />
         <div class="animate-(fade-in duration-300 delay-100 both) bg-amber" />
         <div class="animate-(fade-in duration-300 delay-200 both) bg-green" />
       </div>
       <h1 class="animate-(fade-in duration-700 delay-300 both) text-xs text-neutral-6 font-500 tracking-wide">InsightOut 公关演练场</h1>
-      <div class="row grow items-center justify-end gap-4 text-neutral-3">
+      <div class="row grow items-center justify-end gap-4 text-neutral-3 transition-opacity duration-900" class:op-50={zoom}>
         <div class="mr-1 row animate-(fade-in duration-300 delay-700 both) items-center gap-0.5 rounded bg-neutral-3/20 py-1 pl-1.2 pr-1.6 text-xs text-neutral-5 -my-1">
           <div class="i-lucide-plus" />
           <span class="tracking-wide">New</span>
