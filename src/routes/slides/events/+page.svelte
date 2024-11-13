@@ -10,7 +10,7 @@
 
 <div class="absolute inset-0 center">
 
-  <div class="h-3xl w-6xl col b-1 rounded-md bg-white/70 shadow-(black/4 xl) backdrop-blur-2xl">
+  <div class="h-3xl w-6xl col overflow-hidden b-1 rounded-md bg-white/70 shadow-(black/4 xl) backdrop-blur-2xl">
     <div class="row cursor-grab select-none items-center gap-4 b-b-1 px-3.5 py-3">
       <div class="row gap-1.9 [&>div]:(size-2.4 rounded-full)">
         <div class="bg-red" />
