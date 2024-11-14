@@ -1,6 +1,4 @@
 <script lang="ts">
-  import "$lib/utils/md.css";
-
   import article from "./article.md?raw";
   import Markdown from "$lib/utils/Markdown.svelte";
 
@@ -14,6 +12,8 @@
       {state === "over" ? "在这里放下帖子" : "将帖子拖到这里"}
     </div>
   {:else}
-    <Markdown text={article} />
+    <slot>
+      <Markdown text={article} />
+    </slot>
   {/if}
 </div>
