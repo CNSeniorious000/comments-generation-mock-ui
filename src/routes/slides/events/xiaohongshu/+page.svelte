@@ -14,7 +14,7 @@
   onMount(async () => {
     await sleep(400);
     inputState = "dropped";
-    await sleep(100);
+    await sleep(400);
     buttonState = "loading";
     await sleep(580);
     zoom = true;
