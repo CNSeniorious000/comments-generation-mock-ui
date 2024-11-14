@@ -5,11 +5,11 @@
   import { fade, fly } from "svelte/transition";
 </script>
 
-<img in:fly|global={{ x: "40vw", opacity: 1, duration: 1000 }} class="pointer-events-none absolute h-full min-w-fit" src={frame} alt="iphone frame">
+<img in:fly|global={{ x: "40vw", opacity: 1, duration: 1000 }} class="pointer-events-none absolute h-full min-w-fit select-none" src={frame} alt="iphone frame">
 
-<div in:fly|global={{ x: "40vw", opacity: 1, duration: 1000 }} class="relative h-146 w-69 col overflow-y-hidden rounded-9 shadow-(black/20 xl)">
-  <div class="h-9.25 row shrink-0 items-center justify-between">
-    <div class="ml-9 text-3.3 text-neutral-7 font-500">09:41</div>
+<div in:fly|global={{ x: "40vw", opacity: 1, duration: 1000 }} class="relative h-144.8 w-69 col overflow-y-hidden rounded-9 shadow-(black/20 xl)">
+  <div class="h-7.7 row shrink-0 items-center justify-between">
+    <div class="ml-9 translate-y-0.2 text-3.3 text-neutral-7 font-500">09:41</div>
     <div class="mr-7 row gap-1.3 *:bg-neutral-2/70">
       <div class="size-3 rounded-full" />
       <div class="size-3 rounded-full" />
@@ -17,9 +17,9 @@
     </div>
   </div>
 
-  <div class="h-full col grow gap-1">
+  <div class="h-full col gap-1">
     <h2 class="text-center text-sm text-neutral-6">评论</h2>
-    <div class="relative mx-3.5 h-full col gap-4 overflow-y-scroll pb-2">
+    <div class="relative mx-3.5 h-full col gap-4 overflow-y-scroll pb-13">
       {#await sleep(1100)}
         <div class="absolute inset-0 center">
           <div out:fade class="i-svg-spinners-90-ring-with-bg op-50" />
@@ -46,5 +46,6 @@
     </div>
   </div>
 
-  <div class="mx-auto mb-2.5 h-1 w-2/5 rounded-full bg-black" />
+  <div class="absolute bottom-0 left-3.2 h-10 w-[calc(100%-2rem)] bg-gradient-(from-white/80 to-transparent to-t)" />
+  <div class="absolute bottom-0 left-1/2 mb-2.2 h-1 w-2/5 shrink-0 rounded-full bg-black -translate-x-1/2" />
 </div>
