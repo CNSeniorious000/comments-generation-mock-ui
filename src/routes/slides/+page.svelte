@@ -3,5 +3,6 @@
     <a href="/slides/events">events</a>
     <a href="/slides/events/weibo">weibo</a>
     <a href="/slides/events/douyin">douyin</a>
+    <a href="/slides/events/xiaohongshu">xiaohongshu</a>
   </div>
 </div>
