@@ -1,9 +1,8 @@
 <script lang="ts">
   import Comment from "./Comment.svelte";
   import frame from "./iPhone.png";
+  import { sleep } from "$lib/utils/time";
   import { fade, fly } from "svelte/transition";
-
-  const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 </script>
 
 <img in:fly|global={{ x: "40vw", opacity: 1, duration: 1000 }} class="pointer-events-none absolute h-full min-w-fit" src={frame} alt="iphone frame">
@@ -21,27 +20,28 @@
   <div class="h-full col grow gap-1">
     <h2 class="text-center text-sm text-neutral-6">评论</h2>
     <div class="relative mx-3.5 h-full col gap-4 overflow-y-scroll pb-2">
-      <slot>
-        {#await sleep(1100) then}
-          <Comment content="随时随地发现新鲜事！微博带你欣赏世界上每一个精彩瞬间，了解每一个幕后故事。分享你想表达的，让全世界都能听到你的心声！" />
-        {/await}
-        {#await sleep(1600) then}
-          <Comment content="在微博，随时随地，发现新鲜事；" tags={["礼貌", "开心"]} />
-        {/await}
-        {#await sleep(1900) then}
-          <Comment content="在微博，时政要闻、文娱热点、热门事件一手掌握；" />
-        {/await}
-        {#await sleep(2200) then}
-          <Comment content="在微博，海量视频，等你来刷；专业达人、游戏动漫、美食时尚、情感搞笑、娱乐综艺、影视、体育、VLOG、知识应有尽有；" comments={[{ content: "不忘初心，助力公益。以微博之力，让世界更美。", tags: ["这是一个回复"] }]} />
-        {/await}
-        {#await sleep(2600) then}
-          <Comment content="呈现新鲜、热门、有料的热点，想知道正在发生什么，狂戳微博热搜榜" tags={["新鲜", "热门", "有料"]} />
-        {/await}
-      </slot>
       {#await sleep(1100)}
         <div class="absolute inset-0 center">
           <div out:fade class="i-svg-spinners-90-ring-with-bg op-50" />
         </div>
+      {:then}
+        <slot>
+          {#await sleep(100) then}
+            <Comment content="随时随地发现新鲜事！微博带你欣赏世界上每一个精彩瞬间，了解每一个幕后故事。分享你想表达的，让全世界都能听到你的心声！" />
+          {/await}
+          {#await sleep(600) then}
+            <Comment content="在微博，随时随地，发现新鲜事；" tags={["礼貌", "开心"]} />
+          {/await}
+          {#await sleep(900) then}
+            <Comment content="在微博，时政要闻、文娱热点、热门事件一手掌握；" />
+          {/await}
+          {#await sleep(1200) then}
+            <Comment content="在微博，海量视频，等你来刷；专业达人、游戏动漫、美食时尚、情感搞笑、娱乐综艺、影视、体育、VLOG、知识应有尽有；" comments={[{ content: "不忘初心，助力公益。以微博之力，让世界更美。", tags: ["这是一个回复"] }]} />
+          {/await}
+          {#await sleep(1600) then}
+            <Comment content="呈现新鲜、热门、有料的热点，想知道正在发生什么，狂戳微博热搜榜" tags={["新鲜", "热门", "有料"]} />
+          {/await}
+        </slot>
       {/await}
     </div>
   </div>
