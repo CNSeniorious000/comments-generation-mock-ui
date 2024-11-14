@@ -13,6 +13,8 @@
   $: showBoth = inputState === "dropped" && (buttonState === "loading" || buttonState === "done");
 
   export let zoom = false;
+
+  export let moveLeft = 23;
 </script>
 
 {#if inputState === "dropped" && $$slots.overlay}
@@ -21,7 +23,7 @@
   </div>
 {/if}
 
-<div in:scale={{ start: 0.97, duration: 600 }} class="absolute inset-0 center transition-transform duration-900" class:-translate-x-23%={zoom}>
+<div in:scale={{ start: 0.97, duration: 600 }} class="absolute inset-0 center translate-x-$dx transition-transform duration-900" style:--dx={zoom ? `-${moveLeft}%` : 0}>
 
   <div class="relative h-3xl w-6xl col overflow-hidden b-1 rounded-md shadow-(black/4 xl) transition-transform duration-800" class:delay-100={zoom} class:scale-140={zoom}>
     <div class="row cursor-grab select-none items-center gap-4 b-b-1 bg-white bg-op-70 px-3.5 py-3 backdrop-blur-2xl transition-background-color duration-900" class:!bg-op-30={zoom}>
