@@ -17,7 +17,7 @@
   :global(html) {
     font-family: MiSans, -apple-system, sans-serif;
     font-weight: 330;
-    --uno: flex flex-col items-center overflow-x-hidden;
+    --uno: flex flex-col items-center overflow-x-hidden antialiased;
   }
 
   :global(body)::-webkit-scrollbar {
