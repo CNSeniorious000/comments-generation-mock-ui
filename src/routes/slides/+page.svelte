@@ -5,5 +5,6 @@
     <a href="/slides/events/douyin">douyin</a>
     <a href="/slides/events/xiaohongshu">xiaohongshu</a>
     <a href="/slides/charts/number">number</a>
+    <a href="/slides/charts/pie">pie</a>
   </div>
 </div>
