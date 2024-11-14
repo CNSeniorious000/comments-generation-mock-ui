@@ -6,5 +6,6 @@
     <a href="/slides/events/xiaohongshu">xiaohongshu</a>
     <a href="/slides/charts/number">number</a>
     <a href="/slides/charts/pie">pie</a>
+    <a href="/slides/charts/timeline">timeline</a>
   </div>
 </div>
