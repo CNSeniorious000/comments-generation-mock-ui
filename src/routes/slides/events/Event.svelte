@@ -16,7 +16,7 @@
 </script>
 
 {#if inputState === "dropped" && $$slots.overlay}
-  <div in:fade class="transition-opacity duration-900 [&>*]:(fixed rounded-full)" aria-hidden="true" class:op-50={zoom}>
+  <div in:fade={{ duration: 600 }} class="transition-opacity duration-900 [&>*]:(fixed rounded-full)" aria-hidden="true" class:op-50={zoom}>
     <slot name="overlay" />
   </div>
 {/if}
@@ -61,7 +61,9 @@
       {#if showBoth}
         <div in:slide={{ axis: "x", duration: 900 }} class="center w-2/5 b-l-1">
           <div in:slide={{ axis: "x", duration: 900 }} class="absolute bottom-0 right-0 top-10 w-2/5 overflow-hidden">
-            <div in:fly={{ x: -"20%", opacity: 1, duration: 900 }} class="absolute inset-0 transition-transform duration-900 bg-hero-topography-neutral-1 -m-20%" class:scale-80={zoom} />
+            <div in:fly={{ x: -200, opacity: 0.4, duration: 900 }} class="absolute inset-0 transition-opacity duration-900" class:op-70={zoom}>
+              <div class="absolute inset-0 transition-transform duration-800 bg-hero-topography-neutral-2/65 -m-55" class:delay-100={zoom} class:scale-80={zoom} />
+            </div>
           </div>
           {#if $$slots.right}
             <Right>
