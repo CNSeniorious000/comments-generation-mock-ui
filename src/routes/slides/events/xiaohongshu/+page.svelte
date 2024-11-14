@@ -28,9 +28,9 @@
   </svelte:fragment>
 
   <svelte:fragment slot="right">
-    {#each data.comments as { content, tags }, i}
+    {#each data.comments as { content, tags, comments }, i}
       {#await sleep(i ** 0.7 * 400) then}
-        <Comment {content} {tags} />
+        <Comment {content} {tags} {comments} />
       {/await}
     {/each}
   </svelte:fragment>
