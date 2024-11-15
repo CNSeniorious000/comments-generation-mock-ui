@@ -84,7 +84,7 @@
         <div class="col gap-2" in:fly={{ x: 5 }}>
           <div class="col gap-1 text-xl">
             <div>根据不同的评论环境，</div>
-            <div in:fly={{ x: 5, delay: 100 }}>生成<span>理性</span> / <span>协商性</span> / <span>可对话性</span>/ <span>幽默感</span></div>
+            <div in:fly={{ x: 5, delay: 100 }}>生成<span>理性</span> / <span>协商性</span> / <span>可对话性</span> / <span>幽默感</span></div>
             <div in:fly={{ x: 5, delay: 200 }}>等多种类型的高质量回复</div>
           </div>
         </div>
