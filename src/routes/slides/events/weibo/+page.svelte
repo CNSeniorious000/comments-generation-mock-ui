@@ -57,7 +57,7 @@
 
       {#await sleep(550) then}
         <div class="col items-end gap-2" in:fly={{ x: -5, duration: 600 }}>
-          <div class="w-fit row items-center gap-1 bg-#E6162D/5 px-2 py-1 text-lg text-#E6162D/80 font-500">
+          <div class="w-fit row items-center gap-1 rounded bg-#E6162D/5 px-2 py-1 text-lg text-#E6162D/80 font-500">
             字面意义
             <div class="i-fluent-color-dismiss-circle-20 rotate-45 text-xl" />
             隐含的语境信息
@@ -70,7 +70,7 @@
 
       {#await sleep(700) then}
         <div class="col items-end gap-2" in:fly={{ x: -5, duration: 600 }}>
-          <div class="w-fit row items-center gap-1 bg-#ff9933/9 px-2 py-1 text-lg text-#ff9933/90 font-500">
+          <div class="w-fit row items-center gap-1 rounded bg-#ff9933/9 px-2 py-1 text-lg text-#ff9933/90 font-500">
             实时迭代
             <div class="i-fluent-color-coin-multiple-20 text-xl -translate-y-0.3" />
             网络流行语语料库
