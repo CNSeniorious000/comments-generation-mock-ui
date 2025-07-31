@@ -11,9 +11,9 @@
     <div class="size-full bg-blue transition-background-color hover:bg-sky" class:bg-indigo={state === "loading"} class:bg-emerald={state === "done"}>
 
       {#if state === "loading"}
-        <div transition:fly={{ y: 20 }} class="i-svg-spinners-90-ring-with-bg" />
+        <div transition:fly={{ y: 20 }} class="i-svg-spinners-90-ring-with-bg"></div>
       {:else if state === "done"}
-        <div transition:fly={{ y: -20 }} class="i-tabler-circle-check-filled text-base" />
+        <div transition:fly={{ y: -20 }} class="i-tabler-circle-check-filled text-base"></div>
       {:else}
         <div transition:fly={{ y: -20 }} class="ws-nowrap">开始演练</div>
       {/if}

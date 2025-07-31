@@ -36,7 +36,7 @@
   </svelte:fragment>
 
   <svelte:fragment slot="overlay">
-    <div class="left-10vw size-40vmax bg-#FF2842/10 blur-90 transition-transform duration-900" class:translate-12vw={zoom} />
+    <div class="left-10vw size-40vmax bg-#FF2842/10 blur-90 transition-transform duration-900" class:translate-12vw={zoom}></div>
   </svelte:fragment>
 
 </Event>
@@ -57,7 +57,7 @@
       {#await sleep(800) then}
         <div class="col gap-2" in:fly={{ x: 5, duration: 600 }}>
           <div class="row items-center gap-2 bg-gradient-(from-#FF2842 to-yellow to-rb) bg-clip-text text-lg text-transparent font-500">
-            <div class="i-solar-people-nearby-line-duotone text-2xl text-#FF2842" />
+            <div class="i-solar-people-nearby-line-duotone text-2xl text-#FF2842"></div>
             Agent-Based Modeling
           </div>
           <div class="text-xl">
@@ -69,7 +69,7 @@
       {#await sleep(1000) then}
         <div class="col gap-2" in:fly={{ x: 5, duration: 600 }}>
           <div class="row items-center gap-2 bg-gradient-(from-#FF2842 to-yellow to-rb) bg-clip-text text-lg text-transparent font-500">
-            <div class="i-solar-share-circle-bold-duotone text-2xl text-#FF2842" />
+            <div class="i-solar-share-circle-bold-duotone text-2xl text-#FF2842"></div>
             多轮模拟交互
           </div>
           <div class="text-xl">

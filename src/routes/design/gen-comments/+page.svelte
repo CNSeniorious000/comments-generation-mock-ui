@@ -8,12 +8,12 @@
   <Box b class="flex flex-row justify-between p-2.5 *:gap-2" opacity="0.1">
     <div class="flex flex-row">
       {#each Array.from({ length: 4 }) as _}
-        <div class="h-2.5 rounded bg-zinc-2/70" style:width="{30 + Math.random() * 20}pt" />
+        <div class="h-2.5 rounded bg-zinc-2/70" style:width="{30 + Math.random() * 20}pt"></div>
       {/each}
     </div>
     <div class="flex flex-row">
       {#each Array.from({ length: 1 }) as _}
-        <div class="size-2.5 rounded-full bg-zinc-2/50" />
+        <div class="size-2.5 rounded-full bg-zinc-2/50"></div>
       {/each}
     </div>
   </Box>
@@ -30,11 +30,11 @@
         <div class="flex flex-col">
           <div class="flex flex-row items-center gap-0.5 text-sm">
             京东
-            <div class="i-fluent-emoji-crown -translate-y-1px" />
+            <div class="i-fluent-emoji-crown -translate-y-1px"></div>
           </div>
           <div class="text-xs text-zinc-3 font-240">24-10-18 13:03 发布于 北京 来自 微博网页版</div>
         </div>
-        <div class="i-mingcute-copy-2-line ml-auto mr-1.5 text-zinc-2" />
+        <div class="i-mingcute-copy-2-line ml-auto mr-1.5 text-zinc-2"></div>
       </div>
       <div class="my-1 text-sm">
         近日，相关脱口秀演员参加京东 11.11 营销活动受到网友关注，若因此给您带来了不好的体验，我们深表歉意！后续我们没有和相关演员的合作计划，我们将进一步加大京东 11.11 补贴力度，回馈消费者对京东的关心和支持。
@@ -46,8 +46,8 @@
       </div>
       <div class="mb-1 mt-10 flex flex-col gap-3 [&_div]:(h-3 rounded) [&>section]:(flex flex-col gap-1.5)">
         <section class="op-50">
-          <div class="w-full bg-gradient-(from-zinc-2 via-zinc-2 to-transparent to-r)" />
-          <div class="w-1/3 bg-gradient-(from-zinc-2 to-transparent to-r)" />
+          <div class="w-full bg-gradient-(from-zinc-2 via-zinc-2 to-transparent to-r)"></div>
+          <div class="w-1/3 bg-gradient-(from-zinc-2 to-transparent to-r)"></div>
         </section>
       </div>
 
@@ -55,12 +55,12 @@
         <Box t class="flex flex-row gap-1.5 p-2.5">
           <div class="flex flex-row items-center gap-0.5 rounded bg-blue-5/90 p-1 pl-1.5 text-xs text-white">
             开始模拟
-            <div class="i-healthicons-artificial-intelligence text-base" />
+            <div class="i-healthicons-artificial-intelligence text-base"></div>
           </div>
           <div class="grid w-7 place-items-center rounded bg-zinc-2/80">
-            <div class="i-solar-settings-linear text-zinc-5" />
+            <div class="i-solar-settings-linear text-zinc-5"></div>
           </div>
-          <div class="w-14 rounded bg-zinc-2/35" />
+          <div class="w-14 rounded bg-zinc-2/35"></div>
         </Box>
       </div>
     </Box>

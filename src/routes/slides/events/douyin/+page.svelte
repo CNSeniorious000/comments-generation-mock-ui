@@ -40,8 +40,8 @@
   </svelte:fragment>
 
   <svelte:fragment slot="overlay">
-    <div class="left-10vw size-40vmax bg-#FE2C55/10 blur-90 transition-transform duration-900" class:translate-x-30vw={zoom} />
-    <div class="bottom-10vh right-10vw size-40vmax bg-#25F4EE/7 blur-60" />
+    <div class="left-10vw size-40vmax bg-#FE2C55/10 blur-90 transition-transform duration-900" class:translate-x-30vw={zoom}></div>
+    <div class="bottom-10vh right-10vw size-40vmax bg-#25F4EE/7 blur-60"></div>
   </svelte:fragment>
 
 </Event>
@@ -68,13 +68,13 @@
             {#each ["娱乐新闻", "品牌公关活动", "社会事件"] as type, i}
               {#await sleep(i * 100 + 100) then}
                 <div in:fly|global={{ x: 5 }} class="row items-center gap-1 rounded bg-#FE2C55/7 py-1 pl-2.2 pr-2 text-#FE2C55">
-                  <div class="i-lucide-check-check" />
+                  <div class="i-lucide-check-check"></div>
                   <div>{type}</div>
                 </div>
               {/await}
             {/each}
             <div in:fly|global={{ x: 5, delay: 400 }} class="w-15 row items-center rounded bg-gradient-(from-#FE2C55/7 to-transparent to-r) pl-2.2 text-#FE2C55">
-              <div class="i-lucide-check-check op-40" />
+              <div class="i-lucide-check-check op-40"></div>
             </div>
           </div>
         </div>

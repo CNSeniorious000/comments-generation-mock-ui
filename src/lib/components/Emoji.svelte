@@ -23,7 +23,7 @@
   {#if emoji && show}
     {#key emoji}
       <div in:blur|global={{ delay: first ? 0 : delay, opacity: 1, amount }} out:blur={{ opacity: 1, amount }}>
-        <div in:scale|global={{ delay: first ? 0 : delay, start }} out:scale={{ start }} class={emoji} />
+        <div in:scale|global={{ delay: first ? 0 : delay, start }} out:scale={{ start }} class={emoji}></div>
       </div>
     {/key}
   {/if}

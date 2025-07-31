@@ -139,5 +139,5 @@
 />
 
 <div class="h-6/7 w-full transition-all duration-1000" class:op-0={transform} class:-translate-x-3={transform}>
-  <div class="h-full w-full" bind:this={div} />
+  <div class="h-full w-full" bind:this={div}></div>
 </div>

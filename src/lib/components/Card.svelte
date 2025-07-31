@@ -8,7 +8,7 @@
 
 <div class="relative flex flex-col gap-1 b-(l-1 t-1 zinc-2) px-3 py-2">
   <div class="absolute left-0 top-0 rounded-full bg-white p-1 -translate-1/2">
-    <div class="{icon} text-lg" />
+    <div class="{icon} text-lg"></div>
   </div>
 
   <div class="max-w-sm text-sm">{content}</div>
@@ -17,23 +17,23 @@
     <slot />
     {#if search}
       <div class="flex flex-row items-center gap-0.5 b-(1 current dashed) text-sky-6">
-        <div class="i-lucide-search text-0.9em" />
+        <div class="i-lucide-search text-0.9em"></div>
         {search}
       </div>
     {/if}
     {#if fixable}
       <div class="flex flex-row items-center gap-0.5 b-(1 current dashed) text-teal-6">
-        <div class="i-material-symbols-auto-fix text-0.9em" />
+        <div class="i-material-symbols-auto-fix text-0.9em"></div>
         修改建议
       </div>
     {/if}
     {#if buttons}
       <div class="flex flex-row items-center gap-1">
         <div class="grid place-items-center text-zinc">
-          <div class="i-mingcute-copy-2-line" />
+          <div class="i-mingcute-copy-2-line"></div>
         </div>
         <div class="grid place-items-center text-indigo">
-          <div class="i-healthicons-artificial-intelligence text-1.3em" />
+          <div class="i-healthicons-artificial-intelligence text-1.3em"></div>
         </div>
       </div>
     {/if}

@@ -36,8 +36,8 @@
   </svelte:fragment>
 
   <svelte:fragment slot="overlay">
-    <div class="left-10vw size-40vmax bg-#ff9933/10 blur-90 transition-transform duration-900" class:translate-x-30vw={zoom} />
-    <div class="bottom-10vh right-10vw size-40vmax bg-#E6162D/5 blur-60" />
+    <div class="left-10vw size-40vmax bg-#ff9933/10 blur-90 transition-transform duration-900" class:translate-x-30vw={zoom}></div>
+    <div class="bottom-10vh right-10vw size-40vmax bg-#E6162D/5 blur-60"></div>
   </svelte:fragment>
 
 </Event>
@@ -59,7 +59,7 @@
         <div class="col items-end gap-2" in:fly={{ x: -5, duration: 600 }}>
           <div class="w-fit row items-center gap-1 rounded bg-#E6162D/5 px-2 py-1 text-lg text-#E6162D/80 font-500">
             字面意义
-            <div class="i-fluent-color-dismiss-circle-20 rotate-45 text-xl" />
+            <div class="i-fluent-color-dismiss-circle-20 rotate-45 text-xl"></div>
             隐含的语境信息
           </div>
           <div class="text-xl">
@@ -72,7 +72,7 @@
         <div class="col items-end gap-2" in:fly={{ x: -5, duration: 600 }}>
           <div class="w-fit row items-center gap-1 rounded bg-#ff9933/9 px-2 py-1 text-lg text-#ff9933/90 font-500">
             实时迭代
-            <div class="i-fluent-color-coin-multiple-20 text-xl -translate-y-0.3" />
+            <div class="i-fluent-color-coin-multiple-20 text-xl -translate-y-0.3"></div>
             网络流行语语料库
           </div>
           <div class="col items-end gap-1 text-xl">

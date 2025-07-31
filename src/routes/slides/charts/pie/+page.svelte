@@ -73,5 +73,5 @@
 />
 
 <div class="h-6/7 w-full transition-transform duration-2000 ease-out" class:-rotate-90={rotate}>
-  <div class="h-full w-full" bind:this={div} />
+  <div class="h-full w-full" bind:this={div}></div>
 </div>

@@ -19,7 +19,7 @@
       </div>
       <div class="flex flex-row">
         {#each Array.from({ length: 3 }) as _}
-          <div class="size-2.5 rounded-full bg-zinc-2/50" />
+          <div class="size-2.5 rounded-full bg-zinc-2/50"></div>
         {/each}
       </div>
     </Box>

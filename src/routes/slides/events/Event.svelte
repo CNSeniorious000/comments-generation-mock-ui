@@ -28,23 +28,23 @@
   <div class="relative h-3xl w-6xl col overflow-hidden b-1 rounded-md shadow-(black/4 xl) transition-transform duration-800" class:delay-100={zoom} class:scale-140={zoom}>
     <div class="row cursor-grab select-none items-center gap-4 b-b-1 bg-white bg-op-70 px-3.5 py-3 backdrop-blur-2xl transition-background-color duration-900" class:!bg-op-30={zoom}>
       <div class="row gap-1.9 [&>div]:(size-2.4 rounded-full)">
-        <div class="animate-(fade-in duration-300 both) bg-red" />
-        <div class="animate-(fade-in duration-300 delay-100 both) bg-amber" />
-        <div class="animate-(fade-in duration-300 delay-200 both) bg-green" />
+        <div class="animate-(fade-in duration-300 both) bg-red"></div>
+        <div class="animate-(fade-in duration-300 delay-100 both) bg-amber"></div>
+        <div class="animate-(fade-in duration-300 delay-200 both) bg-green"></div>
       </div>
       <h1 class="animate-(fade-in duration-700 delay-300 both) text-xs text-neutral-6 font-500 tracking-wide">InsightOut 公关演练场</h1>
       <div class="row grow items-center justify-end gap-4 text-neutral-3 transition-opacity duration-900" class:op-50={zoom}>
         <div class="mr-1 row animate-(fade-in duration-300 delay-700 both) items-center gap-0.5 rounded bg-neutral-3/20 py-1 pl-1.2 pr-1.6 text-xs text-neutral-5 -my-1">
-          <div class="i-lucide-plus" />
+          <div class="i-lucide-plus"></div>
           <span class="tracking-wide">New</span>
         </div>
-        <div class="i-lucide-flag animate-(fade-in duration-600 delay-600 both)" />
-        <div class="i-lucide-redo-2 animate-(fade-in duration-300 delay-500 both) text-neutral-5" />
-        <div class="i-lucide-chart-pie animate-(fade-in duration-300 delay-400 both) text-neutral-5" />
-        <div class="i-lucide-hammer animate-(fade-in duration-300 delay-300 both)" />
-        <div class="mx-1 h-3 w-0 w-1.5pt animate-(fade-in duration-300 delay-200 both) bg-neutral-1" />
-        <div class="i-lucide-copy-plus animate-(fade-in duration-300 delay-100 both) text-neutral-5" />
-        <div class="i-lucide-compass animate-(fade-in duration-300 both)" />
+        <div class="i-lucide-flag animate-(fade-in duration-600 delay-600 both)"></div>
+        <div class="i-lucide-redo-2 animate-(fade-in duration-300 delay-500 both) text-neutral-5"></div>
+        <div class="i-lucide-chart-pie animate-(fade-in duration-300 delay-400 both) text-neutral-5"></div>
+        <div class="i-lucide-hammer animate-(fade-in duration-300 delay-300 both)"></div>
+        <div class="mx-1 h-3 w-0 w-1.5pt animate-(fade-in duration-300 delay-200 both) bg-neutral-1"></div>
+        <div class="i-lucide-copy-plus animate-(fade-in duration-300 delay-100 both) text-neutral-5"></div>
+        <div class="i-lucide-compass animate-(fade-in duration-300 both)"></div>
       </div>
     </div>
     <div class="h-full row justify-between overflow-hidden bg-white">
@@ -64,7 +64,7 @@
         <div in:slide={{ axis: "x", duration: 900 }} class="center w-2/5 b-l-1">
           <div in:slide={{ axis: "x", duration: 900 }} class="absolute bottom-0 right-0 top-10 w-2/5 overflow-hidden">
             <div in:fly={{ x: -200, opacity: 0.4, duration: 900 }} class="absolute inset-0 transition-opacity duration-900" class:op-70={zoom}>
-              <div class="absolute inset-0 transition-transform duration-800 bg-hero-topography-neutral-2/65 -m-55" class:delay-100={zoom} class:scale-80={zoom} />
+              <div class="absolute inset-0 transition-transform duration-800 bg-hero-topography-neutral-2/65 -m-55" class:delay-100={zoom} class:scale-80={zoom}></div>
             </div>
           </div>
           {#if $$slots.right}

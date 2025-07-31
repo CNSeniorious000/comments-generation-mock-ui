@@ -5,9 +5,9 @@
 
 <Box l r t>
   <Box b class="ml-1/2 flex flex-row justify-end gap-1.5 p-2" opacity="0.1">
-    <div class="size-2 rounded-full bg-zinc-2" />
-    <div class="size-2 rounded-full bg-zinc-2" />
-    <div class="size-2 rounded-full bg-zinc-4" />
+    <div class="size-2 rounded-full bg-zinc-2"></div>
+    <div class="size-2 rounded-full bg-zinc-2"></div>
+    <div class="size-2 rounded-full bg-zinc-4"></div>
   </Box>
 
   <div class="absolute left-4 top-3 text-xs text-zinc-5 tracking-wide">评论演练场</div>
