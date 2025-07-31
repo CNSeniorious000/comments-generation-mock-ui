@@ -6,7 +6,7 @@ import { defineConfig, presetIcons, presetTypography, presetWebFonts, presetWind
 const config = defineConfig({
   extractors: [extractorSvelte()],
   transformers: [transformerVariantGroup(), transformerDirectives()],
-  presets: [presetWind3(), presetWebFonts({ provider: "bunny", fonts: { mono: "Share Tech Mono" } }), presetIcons(), presetTypography(), presetHeroPatterns()],
+  presets: [presetWind3({ preflight: "on-demand" }), presetWebFonts({ provider: "bunny", fonts: { mono: "Share Tech Mono" } }), presetIcons(), presetTypography(), presetHeroPatterns()],
   safelist: icons,
   shortcuts: {
     col: "flex flex-col",
