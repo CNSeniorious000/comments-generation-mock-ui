@@ -14,7 +14,7 @@
   "dependencies": {
     "@iconify/json": "^2.2.266",
     "@julr/unocss-preset-heropatterns": "^2.0.0",
-    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/adapter-static": "^4.0.0",
     "@sveltejs/kit": "^2.7.3",
     "@sveltejs/vite-plugin-svelte": "^6.0.0",
     "@unocss/extractor-svelte": "^66.0.0",
